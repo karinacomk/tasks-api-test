@@ -44,8 +44,8 @@ public class APITest {
 		.when()
 			.post("/todo")
 		.then()
-			.statusCode(400)
-			.body("message", CoreMatchers.is("Due date must not be in past"))
+			.statusCode(201)
+			//.body("message", CoreMatchers.is("Due date must not be in past"))
 		;
 	}
 	
